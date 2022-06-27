@@ -2,6 +2,7 @@
     --back-color: #ececec;
     --font-color-normal: #333;
     --font-color-titles: #10233f;
+    --font-color-highlite: #7858a6;
 
 }
 
@@ -10,23 +11,226 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+}
+
+html {
+    scroll-padding-top: 6rem;
 }
 
 body {
     background-color: var(--back-color);
     font-family: "Josefine Sans", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top:0;
+    left: 0;
+    width: 90%;
+    height: 6rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--back-color);
+    z-index: 1;
+}
+
+.logo {
+    padding-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem  auto;
+    text-decoration: none;
+    color: var(--font-color-highlite);
+}
+
+.logo a span {
+    padding-left: 1rem;
+    font-size: 3.6rem;
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem  auto;
+    text-decoration: none;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    
+
+}
+
+.menu ul li {
+    font-size: 2.5rem;
+    padding: 0 2rem;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: 200;
+}
+
+/* MAIN */
+
+main {
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+hr {
+    border-top: 8px solid var(--font-color-highlite);
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 20px;
+}
+/* Welcome sectrion */
+.welcome {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome img {
+    width: 15rem;
+    aspect-ratio: 1/1;
+    margin: 1rem auto;;
+}
+
+.welcome h1 {
+    color: var(--font-color-titles);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 1rem auto;
+}
+
+.welcome h2 {
+    color: var(--font-color-titles);
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 1rem auto;
+}
+
+.welcome p {
+    color: var(--font-color-normal);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem auto;
+}
+
+.welcome a {
+    width: 30%;
+    height: 3rem;
+    background-color: var(--font-color-titles);
+    color: var(--back-color);
+    border-radius: 100rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 0.4rem;
+    margin: 1rem auto;
+}
+
+/* About */
+.information, .about {
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+h3 {
+    color: var(--font-color-titles);
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 1rem auto;
+}
+
+.information p {
+    color: var(--font-color-normal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem auto;
+}
+
+.information .socialNetworks a {
+    font-size: 2rem;
+    color: var(--font-color-highlite);
+    text-decoration: none;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+.about {
+    width: 100%;
+}
+.about article {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about .textAbout {
+    width: 50%;
+}
+
+.about article h4 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--font-color-titles);
+}
+
+.about article p {
+    font-size: 1.rem;
+    font-weight: 700;
+    color: var(--font-color-normal);
+    margin-top: 1rem;
+}
+
+.about article .imgInfoAbout {
+    width: 50%;
+}
+
+.about article .imgInfoAbout img {
+    width: 100%;
 }
 
 
 
 
+/* FOOTER*/
 
 footer {
     width: 100%;
     height: 20rem;
     color: var(--back-color);
     text-align: center;
-    font-size: 5vh;
+    
     background: url("../img/waves_footer.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,14 +241,13 @@ footer {
     justify-content: end;
 }
 
-/* footer svg {
-    position: relative;
-    bottom: 0;
-    left: 0%;
-    z-index: -1;
 
-} */
 footer > p {
     margin: 1rem auto;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+footer > p span {
+    font-weight: 400;
 }
