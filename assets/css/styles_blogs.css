@@ -1,0 +1,153 @@
+
+
+.menu ul li a {
+    font-size: 1.6rem;
+
+}
+
+.popularBlog {
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+    padding-top: 2rem;
+    max-height: 25rem;
+    overflow: hidden;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+article .textAbout {
+    max-height: 15rem;
+    overflow: hidden;
+    position: relative;
+}
+
+article .textAbout::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background: linear-gradient(to bottom, var(--font-gradient-start) 0%,var(--font-gradient-end) 100%);
+}
+
+article .imgInfoAbout img {
+    width: 80%;
+}
+
+.latestBlogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.titleLastBlogs {
+    border-bottom: 3px solid var(--font-color-titles);
+}
+
+.titleLastBlogs > h4 {
+    width: 20%;
+    height: 2rem;
+    text-align: center;
+    background-color: var(--font-color-titles);
+    color: var(--back-color);
+    font-size: 1rem;
+    font-weight: 700;
+    position: relative;
+    bottom: -2px;
+}
+
+.articlesBlogs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card {
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: 0.2rem solid var(--font-color-titles);
+    border-radius: 1rem;
+    margin: 1rem 2rem 4rem;
+    transition: 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* Card Animation */
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 3px 3px var(--font-color-highlite);
+}
+
+footer {
+    width: 100%;
+    height: 4rem;
+    background: var(--font-color-titles);
+    background-image: none;
+    color: var(--back-color);
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 200;
+    position: relative;
+    bottom: 0;
+    padding-left: 2rem;
+}
+
+.socialNetworks {
+    width: 100%;
+    margin: auto;
+    text-align: start;
+}
+
+footer a {
+    padding-left: 2rem;
+    color: var(--back-color);
+}
+
+/* Estilos para blogs individuales */
+
+.blog {
+    margin-top: 2.5rem;
+}
+
+.post {
+    width: 100%;
+    margin: 2rem auto;
+    border-bottom: 2px solid var(--font-color-titles);
+    padding-bottom: 2rem;
+}
+
+.titlePost {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--font-color-highlite);
+    margin: 2rem;
+}
+
+.textPost {
+    column-count: 2;
+    column-gap: 3rem;
+    font-size: 1.1rem;
+    color: var(--font-color-normal);
+    line-height: 1.6rem;
+    text-indent: 2rem;
+}
+
+.textPost::first-letter {
+    color: var(--font-color-highlite);
+    font-size: 3rem;
+    font-weight: 200;
+}
