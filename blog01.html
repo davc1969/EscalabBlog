@@ -26,6 +26,7 @@
 
     <!-- Declaración de hojas de estilo -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles_blogs.css">
 
     <!-- Título de la página -->
     <title>Escalab Blogs</title>
@@ -34,39 +35,64 @@
 
 <body>
 
-    <nav>
-        <h1></h1>
-    </nav>
-
     <header>
+        <div class="logo">
+            <a href="#">
+                <img src="./assets/img/MacBook.png" alt="">
+                <span>Escalab Blog</span>
+            </a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="menu">
+                    <li class="menuItem">
+                        <a href="./blogs.html">Volver</a>
+                    </li>
 
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="mainBlog">
+        <section class="blog">
+            <article class="post">
+                <div class="postBlog">
+                    <h4 class="titlePost">Aprendiendo</h4>
+                    <p class="textPost">Es increible lo inmenso que es el mundo del desarrollo web, apenas tengo 1 año de haber comenzado en esto, pero siento que sé un montón de cosas asombrosas.  Ya puedo hacer páginas web, y hacer que se vean bonitas, además puedo hacer que sean útiles! <br><br>
 
+                        Bien conocido es el dicho de "No puedes corer si no sabes caminar", y en el mundo web es una verdad que llega a doler.  Y todo tiene que ver con la manera en que debemos aprender.  Qué es primero: Javascript o Html.  No hay respuesta única, porque dependerá del rumbo que quieras tomar.  Pero la respuesta más común, y es la que he seguido, es que debemos aprender HTML primero, luego CSS y después Javascript, porque esa tríada es la base de todo lo que vemos en neustros navegadores (de mesa o de mano) a diario. <br><br>
+
+                        Claro que hay muchas otras cosas, como diferentes frameworks, tecnologías y librerías para frontend y backend, y mucha especialización en cada área.  Javascript es un universo en si mismo. <br><br>
+
+                        <img src="./assets/img/undraw_static_assets_rpm6 1.png" alt=""><br>
+
+                        Pero lo importante es querer aprender, siempre, sin necesidad de un motivo.  La vida es aprender, para que puedas enseñar, que es lo mas hermoso de la vida. <br><br>   
+                        
+                        Este blog, y todos los blog que tengo son para eso, para enseñar, y para aprender, y para comunciarme.  Ven, aprendamos juntos el maravilloso camino del desarrollo web</p>
+                </div>
+            </article>
+        </section>
+
+
+        
     </main>
 
     <footer>
-        <a href="http://twitter.com/davc1969"><i class="fab fa-twitter"></i></a>
-        <a href="http://instagram.com/davc1969"><i class="fab fa-instagram"></i></a>
-        <a href="http://github.com/davc1969"><i class="fab fa-github"></i></a>
+        <div class="socialNetworks">
+            <span>Contáctame por mis redes sociales: </span>
+            <a href="http://twitter.com/davc1969">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="http://instagram.com/davc1969">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://github.com/davc1969">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
 
     </footer>
-
-
-<!-- SCRIPTS de jquery y bootstraps para manejo correcto de framework Bootstrap -->
-
-    <!--jQuery 3.6.0-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <!--Popper JS 1.14.3-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-    <!--Bootstrap JS 4.2.1-->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!--Scripts Personales-->
-    <script src="assets/js/main.js"></script>
 
 </body>
 
