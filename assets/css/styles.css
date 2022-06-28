@@ -117,7 +117,8 @@ hr {
 .welcome img {
     width: 15rem;
     aspect-ratio: 1/1;
-    margin: 1rem auto;;
+    margin: 1rem auto;
+    border-radius: 100rem;
 }
 
 .welcome h1 {
