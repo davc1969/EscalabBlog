@@ -26,6 +26,7 @@
 
     <!-- Declaración de hojas de estilo -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles_blogs.css">
 
     <!-- Título de la página -->
     <title>Escalab Blogs</title>
@@ -34,37 +35,97 @@
 
 <body>
 
-    <nav>
-        <h1></h1>
-    </nav>
-
     <header>
+        <div class="logo">
+            <a href="#">
+                <img src="./assets/img/MacBook.png" alt="">
+                <span>Escalab Blog</span>
+            </a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="menu">
+                    <li class="menuItem">
+                        <a href="./index.html">Volver</a>
+                    </li>
 
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <section class="popularBlog">
+            <a href="./blog01.html">
+                <article class="infoAbout">
+                    <div class="imgInfoAbout">
+                        <img src="./assets/img/Rectangle 1.png" alt="">
+                    </div>
+                    <div class="textAbout">
+                        <h4 class="titleInfoAbout">Blog más popular:</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maiores fuga consequatur facere, amet architecto cumque pariatur error repellendus unde!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, expedita itaque! Vitae unde illum quae excepturi voluptate ea nihil assumenda cupiditate fugit, enim, quibusdam porro ex autem numquam. Sit modi aperiam sapiente, quaerat deleniti tenetur dignissimos, veniam adipisci quasi esse dolor vitae quos temporibus accusantium eum cum! Quasi officia molestias.
+                        </p>
+                    </div>
+                </article>
+            </a>
+        </section>
 
+
+        <section class="latestBlogs">
+            <div class="titleLastBlogs">
+                <h4>úlitmos blogs:</h4>
+            </div>
+            <div class="articlesBlogs">
+
+                <a href="./blog01.html">
+                    <article class="card">
+                        <img src="./assets/img/Rectangle 4.png" alt="">
+                        <figcaption>Aprendiendo</figcaption>
+                    </article>
+                </a>
+                
+                <a href="./blog01.html">
+                    <article class="card">
+                        <img src="./assets/img/Rectangle 5.png" alt="">
+                        <figcaption>Mis codes</figcaption>
+                    </article>
+                </a>
+                
+                <a href="./blog01.html">
+                    <article class="card">
+                        <img src="./assets/img/Rectangle 6.png" alt="">
+                        <figcaption>Electrónica y 3D</figcaption>
+                    </article>
+                </a>
+                
+                <a href="./blog01.html">
+                    <article class="card">
+                        <img src="./assets/img/Rectangle 7.png" alt="">
+                        <figcaption>MatesMías</figcaption>
+                    </article>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        
+        <div class="socialNetworks">
+            <span>Contáctame por mis redes sociales: </span>
+            <a href="http://twitter.com/davc1969">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="http://instagram.com/davc1969">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://github.com/davc1969">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
 
     </footer>
 
 
-<!-- SCRIPTS de jquery y bootstraps para manejo correcto de framework Bootstrap -->
-
-    <!--jQuery 3.6.0-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <!--Popper JS 1.14.3-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-    <!--Bootstrap JS 4.2.1-->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!--Scripts Personales-->
-    <script src="assets/js/main.js"></script>
 
 </body>
 
